@@ -1,13 +1,20 @@
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 .header {
   z-index: 999;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 200px;
+  padding: 15px;
   transition: 0.5s ease;
   background: gray;
 }
@@ -24,4 +31,13 @@
 }
 .navigation_items {
   background: green;
+}
+.link {
+  position: relative;
+  color: black;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
 }

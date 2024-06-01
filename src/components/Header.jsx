@@ -16,7 +16,11 @@ const Header = () => {
       <div className={s.navigation}>
         <div className={s.navigation_items}>
           {initNav.map((item) => {
-            return <a key={item.id}>{item.name}</a>;
+            return (
+              <a className={s.link} key={item.id}>
+                {item.name}
+              </a>
+            );
           })}
         </div>
       </div>
