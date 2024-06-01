@@ -1,4 +1,5 @@
 import React from "react";
+import s from "../styles/Header.module.css";
 
 const initNav = [
   { id: 1, name: "Home" },
@@ -10,7 +11,7 @@ const initNav = [
 
 const Header = () => {
   return (
-    <header>
+    <header className={s.header}>
       <a>Travel</a>
       <div>
         <div>
