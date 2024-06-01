@@ -9,6 +9,7 @@
   align-items: center;
   padding: 15px 200px;
   transition: 0.5s ease;
+  background: gray;
 }
 .brand {
   color: black;
@@ -16,4 +17,11 @@
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+  background: red;
+}
+.navigation {
+  position: relative;
+}
+.navigation_items {
+  background: green;
 }
