@@ -13,8 +13,8 @@ const Header = () => {
   return (
     <header className={s.header}>
       <a>Travel</a>
-      <div>
-        <div>
+      <div className={s.navigate}>
+        <div className={s.navigate_items}>
           {initNav.map((item) => {
             return <a key={item.id}>{item.name}</a>;
           })}
