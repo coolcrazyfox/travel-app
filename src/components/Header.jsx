@@ -12,9 +12,9 @@ const initNav = [
 const Header = () => {
   return (
     <header className={s.header}>
-      <a>Travel</a>
-      <div className={s.navigate}>
-        <div className={s.navigate_items}>
+      <a className={s.brand}>Travel</a>
+      <div className={s.navigation}>
+        <div className={s.navigation_items}>
           {initNav.map((item) => {
             return <a key={item.id}>{item.name}</a>;
           })}
