@@ -10,8 +10,14 @@ section {
   flex-direction: column;
   background: #2696e9;
 }
+.content {
+  z-index: 888;
+  color: #fff;
+  width: 70%;
+  margin-top: 50px;
+}
 .description {
-  display: flex;
-  max-width: 1800px;
-  border: 1px solid red;
+  /* display: flex; */
+  /* max-width: 1800px; */
+  /* border: 1px solid red; */
 }
