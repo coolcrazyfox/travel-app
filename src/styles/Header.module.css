@@ -24,6 +24,7 @@
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+  cursor: pointer;
 }
 .navigation {
   position: relative;
