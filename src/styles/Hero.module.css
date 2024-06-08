@@ -24,6 +24,10 @@ section {
   line-height: 75px;
   margin-bottom: 40px;
 }
+.span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
 .description {
   /* display: flex; */
   /* max-width: 1800px; */
