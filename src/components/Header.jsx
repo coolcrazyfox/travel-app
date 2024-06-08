@@ -11,8 +11,10 @@ const initNav = [
 
 const Header = () => {
   return (
-    <header className={s.header}>
-      <a className={s.brand}>Travel</a>
+    <div className={s.header}>
+      <a className={s.brand} href="#">
+        Travel
+      </a>
       <div className={s.navigation}>
         <div className={s.navigation_items}>
           {initNav.map((item) => {
@@ -24,7 +26,7 @@ const Header = () => {
           })}
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 
