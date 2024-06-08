@@ -48,3 +48,14 @@ section {
   flex-direction: column;
   transition: 0.5s ease;
 }
+.link {
+  color: #fff;
+  font-size: 1.6em;
+  transition: 0.3s ease;
+}
+.link:hot(:last-child) {
+  margin-top: 20px;
+}
+.link:hover {
+  transform: scale(1.3);
+}
