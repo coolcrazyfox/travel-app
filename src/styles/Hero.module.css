@@ -29,7 +29,14 @@ section {
   font-weight: 600;
 }
 .description {
-  /* display: flex; */
-  /* max-width: 1800px; */
-  /* border: 1px solid red; */
+  margin-bottom: 65px;
+}
+.link_btn {
+  background: #fff;
+  padding: 15px 35px;
+  color: #1680ac;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 2px;
 }

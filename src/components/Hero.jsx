@@ -25,16 +25,14 @@ const Hero = () => {
           esse excepteur.Nisi duis enim id aliquip excepteur proident nulla
           ullamco esse nisi quis magna duis.
         </p>
-        <div href="#" className={s.link_btn}>
-          Read More
-        </div>
+        <div className={s.link_btn}>Read More</div>
       </div>
       <div className={s.media_icons}>
         {iconsData.map((item, index) => {
           return (
-            <div key={item.title} className={s.link} href="#">
+            <a key={item.title} className={s.link} href="#">
               <i className={s.fab}>{item.icon}</i>
-            </div>
+            </a>
           );
         })}
       </div>
