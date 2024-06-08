@@ -10,3 +10,8 @@ section {
   flex-direction: column;
   background: #2696e9;
 }
+.description {
+  display: flex;
+  max-width: 1800px;
+  border: 1px solid red;
+}

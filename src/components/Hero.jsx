@@ -12,7 +12,7 @@ const iconsData = [
 const Hero = () => {
   return (
     <section className={s.home}>
-      <div className="s.content">
+      <div className={s.content}>
         <h1>
           Wonderful.
           <br />
@@ -29,14 +29,16 @@ const Hero = () => {
             culpa ex esse nostrud.Eu minim consectetur sunt anim consectetur
             cupidatat et nisi amet.
           </p>
-          <a href="#">Read More</a>
+          <a href="#" className={s.link_btn}>
+            Read More
+          </a>
         </h1>
       </div>
-      <div className="s.media_icons">
+      <div className={s.media_icons}>
         {iconsData.map((item, index) => {
           return (
-            <a key={item.title} className="s.link" href="#">
-              <i className="s.fab">{item.icon}</i>
+            <a key={item.title} className={s.link} href="#">
+              <i className={s.fab}>{item.icon}</i>
             </a>
           );
         })}
