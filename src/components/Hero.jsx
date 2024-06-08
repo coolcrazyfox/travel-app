@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <section className={s.home}>
       <div className={s.content}>
-        <h1>
+        <h1 className={s.h1}>
           Wonderful.
           <br />
           <span>Island</span>

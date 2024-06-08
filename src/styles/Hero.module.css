@@ -16,6 +16,14 @@ section {
   width: 70%;
   margin-top: 50px;
 }
+.h1 {
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 40px;
+}
 .description {
   /* display: flex; */
   /* max-width: 1800px; */
