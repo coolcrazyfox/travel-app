@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
+import s from "../styles/Hero.module.css";
 
 const iconsData = [
   { title: "instagram", icon: <FaInstagram /> },
@@ -10,13 +11,13 @@ const iconsData = [
 
 const Hero = () => {
   return (
-    <section className="s.home">
+    <section className={s.home}>
       <div className="s.content">
         <h1>
           Wonderful.
           <br />
           <span>Island</span>
-          <p>
+          <p className={s.description}>
             lorem In cillum officia id nisi ut.Proident sint exercitation
             consectetur nisi in anim laborum nulla consequat.Excepteur
             reprehenderit sunt amet laborum nulla deserunt nulla reprehenderit

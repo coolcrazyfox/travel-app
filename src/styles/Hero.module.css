@@ -1,0 +1,12 @@
+section {
+  padding: 100px 200px;
+}
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #2696e9;
+}
