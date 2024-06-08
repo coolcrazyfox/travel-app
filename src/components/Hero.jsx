@@ -16,7 +16,7 @@ const Hero = () => {
         <h1 className={s.h1}>
           Wonderful.
           <br />
-          <span>Island</span>
+          <span className={s.span}>Island</span>
           <p className={s.description}>
             lorem In cillum officia id nisi ut.Proident sint exercitation
             consectetur nisi in anim laborum nulla consequat.Excepteur
