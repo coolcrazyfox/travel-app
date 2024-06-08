@@ -17,7 +17,7 @@ const Header = () => {
         <div className={s.navigation_items}>
           {initNav.map((item) => {
             return (
-              <a className={s.link} key={item.id} href="#">
+              <a className={s.link} key={item.id}>
                 {item.name}
               </a>
             );
