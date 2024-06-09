@@ -23,7 +23,7 @@ const Header = () => {
       </a>
       <div
         className={isActive ? s.menu_btn : s.menu_btn_active}
-        onClick={() => setIsActive(!isActive)}
+        onClick={onChangeMenuHandel}
       ></div>
       <div className={!isClose ? s.navigation : s.navigation_active}>
         <div className={s.navigation_items}>
