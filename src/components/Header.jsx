@@ -20,7 +20,7 @@ const Header = () => {
         className={isActive ? s.menu_btn : s.menu_btn_active}
         onClick={() => setIsActive(!isActive)}
       ></div>
-      <div className={isActive ? s.navigation : s.navigation_active}>
+      <div className={isActive ? s.navigation_active : s.navigation}>
         <div className={s.navigation_items}>
           {initNav.map((item) => {
             return (
