@@ -25,7 +25,7 @@ const Header = () => {
         className={isActive ? s.menu_btn : s.menu_btn_active}
         onClick={onChangeMenuHandel}
       ></div>
-      <div className={!isClose ? s.navigation : s.navigation_active}>
+      <div className={isClose ? s.navigation : s.navigation_active}>
         <div className={s.navigation_items}>
           {initNav.map((item) => {
             return (

@@ -56,6 +56,7 @@
   .header {
     padding: 12px 20px;
   }
+
   .navigation {
     display: none;
   }
@@ -69,6 +70,7 @@
     justify-content: center;
     align-items: center;
     background: rgba(1, 1, 1, 0.5);
+    z-index: 100;
   }
   .link {
     color: #222;
@@ -110,5 +112,6 @@
     color: #fff;
     cursor: pointer;
     transition: all;
+    z-index: 888;
   }
 }
