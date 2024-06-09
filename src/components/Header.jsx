@@ -12,14 +12,14 @@ const initNav = [
 const Header = () => {
   return (
     <div className={s.header}>
-      <a className={s.brand} href="#">
+      <a className={s.brand} href="link_HERO">
         Travel
       </a>
       <div className={s.navigation}>
         <div className={s.navigation_items}>
           {initNav.map((item) => {
             return (
-              <a className={s.link} key={item.id}>
+              <a className={s.link} key={item.id} href="link">
                 {item.name}
               </a>
             );

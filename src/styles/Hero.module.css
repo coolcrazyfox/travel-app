@@ -59,3 +59,8 @@ section {
 .link:hover {
   transform: scale(1.3);
 }
+@media (max-width: 1040px) {
+  .home {
+    padding: 100px 20px;
+  }
+}
