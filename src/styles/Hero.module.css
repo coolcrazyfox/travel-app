@@ -63,4 +63,7 @@ section {
   .home {
     padding: 100px 20px;
   }
+  .media_icons {
+    right: 15px;
+  }
 }
