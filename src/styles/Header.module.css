@@ -104,7 +104,7 @@
     transition: all;
   }
   .menu_btn_active {
-    background: url("/src/assets/cross.png") no-repeat;
+    background: url("/src/assets/delete.png") no-repeat;
     background-size: 30px;
     background-position: center;
     width: 40px;
