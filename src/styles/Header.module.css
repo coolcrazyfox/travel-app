@@ -59,4 +59,13 @@
   .navigation {
     display: none;
   }
+  .menu_btn {
+    background: url("../assets/menu.png") no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all;
+  }
 }
