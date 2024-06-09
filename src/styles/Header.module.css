@@ -56,4 +56,7 @@
   .header {
     padding: 12px 20px;
   }
+  .navigation {
+    display: none;
+  }
 }
