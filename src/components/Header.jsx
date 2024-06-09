@@ -11,7 +11,11 @@ const initNav = [
 
 const Header = () => {
   const [isActive, setIsActive] = React.useState(true);
-  const [isClose, setIsClose] = React.useState(isActive);
+  const [isClose, setIsClose] = React.useState(true);
+  const onChangeMenuHandel = () => {
+    setIsActive(!isActive);
+    setIsClose(!isClose);
+  };
   return (
     <div className={s.header}>
       <a className={s.brand} href="link_HERO">
