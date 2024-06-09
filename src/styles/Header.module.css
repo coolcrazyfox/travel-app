@@ -60,11 +60,22 @@
     display: none;
   }
   .menu_btn {
-    background: url("../assets/menu.png") no-repeat;
+    background: url("/src/assets/menu.png") no-repeat;
     background-size: 30px;
     background-position: center;
     width: 40px;
     height: 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: all;
+  }
+  .menu_btn_active {
+    background: url("/src/assets/close.png") no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    color: #fff;
     cursor: pointer;
     transition: all;
   }
