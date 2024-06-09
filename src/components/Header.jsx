@@ -10,7 +10,7 @@ const initNav = [
 ];
 
 const Header = () => {
-  const [isActive, setIsActive] = React.useState(false);
+  const [isActive, setIsActive] = React.useState(true);
   return (
     <div className={s.header}>
       <a className={s.brand} href="link_HERO">
