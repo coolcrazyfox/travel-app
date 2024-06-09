@@ -57,6 +57,9 @@
     padding: 12px 20px;
   }
   .navigation {
+    display: none;
+  }
+  .navigation_active {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -72,8 +75,12 @@
     font-size: 1.2em;
     margin: 20px;
   }
+  .link::before {
+    background: #222;
+    height: 5px;
+  }
   .navigation_items {
-    background: #fff;
+    background: #ffffffee;
     width: 600px;
     max-width: 600px;
     margin: 20px;
