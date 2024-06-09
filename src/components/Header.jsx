@@ -11,6 +11,7 @@ const initNav = [
 
 const Header = () => {
   const [isActive, setIsActive] = React.useState(true);
+  const [isClose, setIsClose] = React.useState(isActive);
   return (
     <div className={s.header}>
       <a className={s.brand} href="link_HERO">
@@ -20,7 +21,7 @@ const Header = () => {
         className={isActive ? s.menu_btn : s.menu_btn_active}
         onClick={() => setIsActive(!isActive)}
       ></div>
-      <div className={isActive ? s.navigation_active : s.navigation}>
+      <div className={!isClose ? s.navigation : s.navigation_active}>
         <div className={s.navigation_items}>
           {initNav.map((item) => {
             return (
