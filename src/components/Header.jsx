@@ -15,6 +15,7 @@ const Header = () => {
       <a className={s.brand} href="link_HERO">
         Travel
       </a>
+      <div className={s.menu_btn}></div>
       <div className={s.navigation}>
         <div className={s.navigation_items}>
           {initNav.map((item) => {
