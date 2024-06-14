@@ -79,6 +79,16 @@ section {
   z-index: 000;
   object-fit: cover;
 }
+
+.slider_navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(80px);
+  margin-bottom: 12px;
+  z-index: 888;
+}
 @media (max-width: 1040px) {
   .home {
     padding: 100px 20px;
