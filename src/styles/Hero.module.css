@@ -10,6 +10,12 @@ section {
   flex-direction: column;
   background: #2696e9;
 }
+.home::before {
+  content: "";
+  position: absolute;
+  background: rgba(3, 96, 251, 0.5);
+  z-index: 777;
+}
 .content {
   z-index: 888;
   color: #fff;
