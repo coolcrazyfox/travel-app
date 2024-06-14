@@ -12,6 +12,7 @@ const iconsData = [
 const Hero = () => {
   return (
     <section className={s.home}>
+      <video src="main.mp4" autoPlay muted loop></video>
       <div className={s.content}>
         <h1 className={s.h1}>
           Wonderful.
