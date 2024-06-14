@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
 import s from "../styles/Hero.module.css";
+import video from "../assets/main.mp4";
 
 const iconsData = [
   { title: "instagram", icon: <FaInstagram /> },
@@ -12,7 +13,7 @@ const iconsData = [
 const Hero = () => {
   return (
     <section className={s.home}>
-      <video src="main.mp4" autoPlay muted loop></video>
+      <video className={s.video_box} src={video} autoPlay muted loop></video>
       <div className={s.content}>
         <h1 className={s.h1}>
           Wonderful.
