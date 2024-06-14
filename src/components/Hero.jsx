@@ -49,7 +49,11 @@ const Hero = () => {
       </div>
       <div className={s.slider_navigation}>
         {navSlideData.map((item) => {
-          return <div key={item.id}>{item.name}</div>;
+          return (
+            <div key={item.id} className={s.nav_btn}>
+              {item.name}
+            </div>
+          );
         })}
       </div>
     </section>

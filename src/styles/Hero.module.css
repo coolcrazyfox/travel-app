@@ -86,8 +86,21 @@ section {
   justify-content: center;
   align-items: center;
   transform: translateY(80px);
+  margin-top: 30%;
   margin-bottom: 12px;
   z-index: 888;
+}
+.nav_btn {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 2555, 255, 0.5);
+  transition: 0.3s ease;
+}
+.nav_btn:not(:last-child) {
+  margin-right: 20px;
 }
 @media (max-width: 1040px) {
   .home {
