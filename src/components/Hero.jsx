@@ -10,14 +10,20 @@ const iconsData = [
   { title: "twitter", icon: <FaTwitter /> },
 ];
 const navSlideData = [
-  { id: 1, name: "" },
-  { id: 2, name: "" },
-  { id: 3, name: "" },
-  { id: 4, name: "" },
-  { id: 5, name: "" },
+  { id: 1, active: false },
+  { id: 2, active: false },
+  { id: 3, active: false },
+  { id: 4, active: false },
+  { id: 5, active: true },
 ];
 
 const Hero = () => {
+  const [colArray, setColArray] = React.useState(navSlideData);
+  const onClickBtnNav = () => {
+    const nextArraySlider = [...colArray];
+    nextArraySlider.reverse();
+    setColArray([...colArray, { id: 6, active: true }]);
+  };
   return (
     <section className={s.home}>
       <video className={s.video_box} src={video} autoPlay muted loop></video>
@@ -50,7 +56,11 @@ const Hero = () => {
       <div className={s.slider_navigation}>
         {navSlideData.map((item) => {
           return (
-            <div key={item.id} className={s.nav_btn}>
+            <div
+              onClick={onClickBtnNav}
+              key={item.id}
+              className={item.name === "" ? s.nav_btn : s.nav_btn_active}
+            >
               {item.name}
             </div>
           );

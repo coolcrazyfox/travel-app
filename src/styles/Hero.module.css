@@ -86,7 +86,7 @@ section {
   justify-content: center;
   align-items: center;
   transform: translateY(80px);
-  margin-top: 30%;
+  margin-top: 11%;
   margin-bottom: 12px;
   z-index: 888;
 }
@@ -105,6 +105,22 @@ section {
 .nav_btn:hover {
   transform: scale(1.2);
 }
+.nav_btn_active {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2696e9;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 2555, 255, 0.5);
+  transition: 0.3s ease;
+}
+.nav_btn_active:not(:last-child) {
+  margin-right: 20px;
+}
+.nav_btn_active:hover {
+  transform: scale(1.2);
+}
+
 @media (max-width: 1040px) {
   .home {
     padding: 100px 20px;
