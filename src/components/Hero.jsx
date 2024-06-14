@@ -9,6 +9,13 @@ const iconsData = [
   { title: "facebook", icon: <FaFacebook /> },
   { title: "twitter", icon: <FaTwitter /> },
 ];
+const navSlideData = [
+  { id: 1, name: "" },
+  { id: 2, name: "" },
+  { id: 3, name: "" },
+  { id: 4, name: "" },
+  { id: 5, name: "" },
+];
 
 const Hero = () => {
   return (
@@ -38,6 +45,11 @@ const Hero = () => {
               <i className={s.fab}>{item.icon}</i>
             </a>
           );
+        })}
+      </div>
+      <div className={s.slider_navigation}>
+        {navSlideData.map((item) => {
+          return <div key={item.id}>{item.name}</div>;
         })}
       </div>
     </section>
