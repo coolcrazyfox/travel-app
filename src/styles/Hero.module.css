@@ -102,6 +102,9 @@ section {
 .nav_btn:not(:last-child) {
   margin-right: 20px;
 }
+.nav_btn:hover {
+  transform: scale(1.2);
+}
 @media (max-width: 1040px) {
   .home {
     padding: 100px 20px;
