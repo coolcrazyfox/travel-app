@@ -32,6 +32,7 @@ const Hero = () => {
   };
   return (
     <section className={s.home}>
+      <video className={s.video_box} src={video} autoPlay muted loop></video>
       <div className={s.content}>
         <h1 className={s.h1}>
           Wonderful.
@@ -69,7 +70,6 @@ const Hero = () => {
           1140: { slidesPerView: 3, spaceBetween: 30 },
         }}
       >
-        <video className={s.video_box} src={video} autoPlay muted loop></video>
         <div className={s.slider_navigation}>
           {navSlideData.map((item) => {
             return (
