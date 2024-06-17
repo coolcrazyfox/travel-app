@@ -64,7 +64,7 @@ const Hero = () => {
         // slidesPerView={1}
         // spaceBetween={30}
         modules={[Pagination]}
-        pagination={{ clickable: true }}
+        pagination={true}
         // breakpoints={{
         //   768: { slidesPerView: 2, spaceBetween: 30 },
         //   1140: { slidesPerView: 3, spaceBetween: 30 },
@@ -77,9 +77,9 @@ const Hero = () => {
                 className={s.swiper}
                 // onClick={onClickBtnNav}
               >
-                <div key={item.id} className={s.nav_btn}>
-                  {item.name}
-                </div>
+                {/* <div key={item.id} className={s.nav_btn}> */}
+                {item.name}
+                {/* </div> */}
               </SwiperSlide>
             );
           })}
