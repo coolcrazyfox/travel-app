@@ -59,7 +59,16 @@ const Hero = () => {
           );
         })}
       </div>
-      <Swiper>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        modules={[Pagination]}
+        pagination={{ clickable: true }}
+        breakpoints={{
+          768: { slidesPerView: 2, spaceBetween: 30 },
+          1140: { slidesPerView: 3, spaceBetween: 30 },
+        }}
+      >
         <video className={s.video_box} src={video} autoPlay muted loop></video>
         <div className={s.slider_navigation}>
           {navSlideData.map((item) => {
