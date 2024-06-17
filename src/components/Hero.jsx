@@ -60,31 +60,31 @@ const Hero = () => {
           );
         })}
       </div>
-      <Swiper
-        // slidesPerView={1}
-        // spaceBetween={30}
-        modules={[Pagination]}
-        pagination={true}
-        // breakpoints={{
-        //   768: { slidesPerView: 2, spaceBetween: 30 },
-        //   1140: { slidesPerView: 3, spaceBetween: 30 },
-        // }}
-      >
-        <div className={s.slider_navigation}>
+      <div className={s.slider_navigation}>
+        <Swiper
+          className={s.swiper_container}
+          slidesPerView={1}
+          spaceBetween={5}
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            768: { slidesPerView: 2, spaceBetween: 5 },
+            1140: { slidesPerView: 4, spaceBetween: 5 },
+          }}
+        >
           {navSlideData.map((item) => {
             return (
               <SwiperSlide
-                className={s.swiper}
+                key={item.id}
+
                 // onClick={onClickBtnNav}
               >
-                {/* <div key={item.id} className={s.nav_btn}> */}
-                {item.name}
-                {/* </div> */}
+                <div className={s.nav_btn}>{item.name}</div>
               </SwiperSlide>
             );
           })}
-        </div>
-      </Swiper>
+        </Swiper>
+      </div>
     </section>
   );
 };
