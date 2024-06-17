@@ -61,25 +61,26 @@ const Hero = () => {
         })}
       </div>
       <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
+        // slidesPerView={1}
+        // spaceBetween={30}
         modules={[Pagination]}
         pagination={{ clickable: true }}
-        breakpoints={{
-          768: { slidesPerView: 2, spaceBetween: 30 },
-          1140: { slidesPerView: 3, spaceBetween: 30 },
-        }}
+        // breakpoints={{
+        //   768: { slidesPerView: 2, spaceBetween: 30 },
+        //   1140: { slidesPerView: 3, spaceBetween: 30 },
+        // }}
       >
         <div className={s.slider_navigation}>
           {navSlideData.map((item) => {
             return (
-              <div
+              <SwiperSlide
+                className={s.swiper}
                 // onClick={onClickBtnNav}
-                key={item.id}
-                className={item.name === "" ? s.nav_btn : s.nav_btn_active}
               >
-                {item.name}
-              </div>
+                <div key={item.id} className={s.nav_btn}>
+                  {item.name}
+                </div>
+              </SwiperSlide>
             );
           })}
         </div>
