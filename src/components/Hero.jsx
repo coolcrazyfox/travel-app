@@ -32,7 +32,6 @@ const Hero = () => {
   };
   return (
     <section className={s.home}>
-      <video className={s.video_box} src={video} autoPlay muted loop></video>
       <div className={s.content}>
         <h1 className={s.h1}>
           Wonderful.
@@ -50,6 +49,7 @@ const Hero = () => {
           Read More
         </a>
       </div>
+
       <div className={s.media_icons}>
         {iconsData.map((item, index) => {
           return (
@@ -59,19 +59,22 @@ const Hero = () => {
           );
         })}
       </div>
-      <div className={s.slider_navigation}>
-        {navSlideData.map((item) => {
-          return (
-            <div
-              // onClick={onClickBtnNav}
-              key={item.id}
-              className={item.name === "" ? s.nav_btn : s.nav_btn_active}
-            >
-              {item.name}
-            </div>
-          );
-        })}
-      </div>
+      <Swiper>
+        <video className={s.video_box} src={video} autoPlay muted loop></video>
+        <div className={s.slider_navigation}>
+          {navSlideData.map((item) => {
+            return (
+              <div
+                // onClick={onClickBtnNav}
+                key={item.id}
+                className={item.name === "" ? s.nav_btn : s.nav_btn_active}
+              >
+                {item.name}
+              </div>
+            );
+          })}
+        </div>
+      </Swiper>
     </section>
   );
 };
