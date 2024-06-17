@@ -57,7 +57,7 @@ const Hero = () => {
         {navSlideData.map((item) => {
           return (
             <div
-              onClick={onClickBtnNav}
+              // onClick={onClickBtnNav}
               key={item.id}
               className={item.name === "" ? s.nav_btn : s.nav_btn_active}
             >
