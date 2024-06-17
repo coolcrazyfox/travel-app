@@ -30,6 +30,7 @@ const Hero = () => {
     nextArraySlider.reverse();
     setColArray([...colArray, { id: 6, active: true }]);
   };
+
   return (
     <section className={s.home}>
       <video className={s.video_box} src={video} autoPlay muted loop></video>
@@ -64,12 +65,12 @@ const Hero = () => {
         <Swiper
           className={s.swiper_container}
           slidesPerView={1}
-          spaceBetween={5}
+          spaceBetween={30}
           modules={[Pagination]}
           pagination={{ clickable: true }}
           breakpoints={{
-            768: { slidesPerView: 2, spaceBetween: 5 },
-            1140: { slidesPerView: 4, spaceBetween: 5 },
+            768: { slidesPerView: 2, spaceBetween: 30 },
+            1140: { slidesPerView: 5, spaceBetween: 30 },
           }}
         >
           {navSlideData.map((item) => {
@@ -79,7 +80,14 @@ const Hero = () => {
 
                 // onClick={onClickBtnNav}
               >
-                <div className={s.nav_btn}>{item.name}</div>
+                <div
+                  className={s.nav_btn}
+                  onClick={() => {
+                    alert("yes");
+                  }}
+                >
+                  {item.name}
+                </div>
               </SwiperSlide>
             );
           })}
