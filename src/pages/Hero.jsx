@@ -53,7 +53,7 @@ const Hero = () => {
       <div className={s.media_icons}>
         {iconsData.map((item, index) => {
           return (
-            <a key={item.title} className={s.link} href="icon_link">
+            <a key={item.title} className={s.link} href={item.link}>
               <i className={s.fab}>{item.icon}</i>
             </a>
           );
