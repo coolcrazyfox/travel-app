@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import s from "../styles/Hero.module.css";
-import video from "../assets/about.mp4";
+import video from "../assets/contact_video.mp4";
 import {
   FaArrowLeft,
   FaFacebook,
@@ -22,9 +22,9 @@ const Contact = () => {
       <video className={s.video_box} src={video} autoPlay muted loop></video>
       <div className={s.content}>
         <h1 className={s.h1}>
-          About
+          Contact
           <br />
-          <span className={s.span}>The Company</span>
+          <span className={s.span}>Information</span>
         </h1>
         <p className={s.description}>
           lorem In cillum officia id nisi ut.Proident sint exercitation
