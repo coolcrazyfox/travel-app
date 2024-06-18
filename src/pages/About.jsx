@@ -19,7 +19,6 @@ export const iconsData = [
 const About = () => {
   return (
     <section className={s.home}>
-      {" "}
       <video className={s.video_box} src={video} autoPlay muted loop></video>
       <div className={s.content}>
         <h1 className={s.h1}>
