@@ -10,10 +10,22 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 export const iconsData = [
-  { title: "instagram", icon: <FaInstagram /> },
-  { title: "telegram", icon: <FaTelegram /> },
-  { title: "facebook", icon: <FaFacebook /> },
-  { title: "twitter", icon: <FaTwitter /> },
+  {
+    title: "instagram",
+    icon: <FaInstagram />,
+    link: "https://www.instagram.com/",
+  },
+  {
+    title: "telegram",
+    icon: <FaTelegram />,
+    link: "https://www.telegram.com/",
+  },
+  {
+    title: "facebook",
+    icon: <FaFacebook />,
+    link: "https://www.facebook.com/",
+  },
+  { title: "twitter", icon: <FaTwitter />, link: "https://www.twitter.com/" },
 ];
 
 const Explore = () => {
@@ -43,7 +55,7 @@ const Explore = () => {
       <div className={s.media_icons}>
         {iconsData.map((item, index) => {
           return (
-            <a key={item.title} className={s.link} href="icon_link">
+            <a key={item.title} className={s.link} href={item.link}>
               <i className={s.fab}>{item.icon}</i>
             </a>
           );
