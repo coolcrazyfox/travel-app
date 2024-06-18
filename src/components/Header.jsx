@@ -30,9 +30,9 @@ const Header = () => {
         <div className={s.navigation_items}>
           {initNav.map((item) => {
             return (
-              <a className={s.link} key={item.id} href="link">
+              <Link className={s.link} key={item.id} to={item.link}>
                 {item.name}
-              </a>
+              </Link>
             );
           })}
         </div>
