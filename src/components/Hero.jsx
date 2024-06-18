@@ -9,28 +9,14 @@ import { FaFacebook, FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
 import s from "../styles/Hero.module.css";
 import video from "../assets/main.mp4";
 
-const iconsData = [
+export const iconsData = [
   { title: "instagram", icon: <FaInstagram /> },
   { title: "telegram", icon: <FaTelegram /> },
   { title: "facebook", icon: <FaFacebook /> },
   { title: "twitter", icon: <FaTwitter /> },
 ];
-const navSlideData = [
-  { id: 1, active: false },
-  { id: 2, active: false },
-  { id: 3, active: false },
-  { id: 4, active: false },
-  { id: 5, active: true },
-];
 
 const Hero = () => {
-  const [colArray, setColArray] = React.useState(navSlideData);
-  const onClickBtnNav = () => {
-    const nextArraySlider = [...colArray];
-    nextArraySlider.reverse();
-    setColArray([...colArray, { id: 6, active: true }]);
-  };
-
   return (
     <section className={s.home}>
       <video className={s.video_box} src={video} autoPlay muted loop></video>
