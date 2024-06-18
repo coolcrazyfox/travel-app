@@ -1,7 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import s from "../styles/Hero.module.css";
 import video from "../assets/about.mp4";
-import iconsData from "./Hero";
+import {
+  FaArrowLeft,
+  FaFacebook,
+  FaInstagram,
+  FaTelegram,
+  FaTwitter,
+} from "react-icons/fa";
+export const iconsData = [
+  { title: "instagram", icon: <FaInstagram /> },
+  { title: "telegram", icon: <FaTelegram /> },
+  { title: "facebook", icon: <FaFacebook /> },
+  { title: "twitter", icon: <FaTwitter /> },
+];
+
 const About = () => {
   return (
     <section className={s.home}>
@@ -11,7 +25,7 @@ const About = () => {
         <h1 className={s.h1}>
           About
           <br />
-          <span className={s.span}>Us</span>
+          <span className={s.span}>The Company</span>
         </h1>
         <p className={s.description}>
           lorem In cillum officia id nisi ut.Proident sint exercitation
@@ -20,9 +34,12 @@ const About = () => {
           esse excepteur.Nisi duis enim id aliquip excepteur proident nulla
           ullamco esse nisi quis magna duis.
         </p>
-        <a href="link" className={s.link_btn}>
-          Read More
-        </a>
+        <Link to="/home" className={s.link_btn}>
+          <span>
+            <FaArrowLeft width={22} height={22} />
+          </span>
+          Back
+        </Link>
       </div>
       <div className={s.media_icons}>
         {iconsData.map((item, index) => {
