@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import s from "../styles/Header.module.css";
 
 const initNav = [
@@ -18,9 +19,9 @@ const Header = () => {
   };
   return (
     <div className={s.header}>
-      <a className={s.brand} href="link_HERO">
+      <Link to="/home" className={s.brand} href="link_HERO">
         Travel
-      </a>
+      </Link>
       <div
         className={isActive ? s.menu_btn : s.menu_btn_active}
         onClick={onChangeMenuHandel}
