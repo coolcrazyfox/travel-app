@@ -1,4 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import s from "../styles/Hero.module.css";
+import video from "../assets/about.mp4";
+import {
+  FaArrowLeft,
+  FaFacebook,
+  FaInstagram,
+  FaTelegram,
+  FaTwitter,
+} from "react-icons/fa";
+export const iconsData = [
+  { title: "instagram", icon: <FaInstagram /> },
+  { title: "telegram", icon: <FaTelegram /> },
+  { title: "facebook", icon: <FaFacebook /> },
+  { title: "twitter", icon: <FaTwitter /> },
+];
 
 const Contact = () => {
   return (
