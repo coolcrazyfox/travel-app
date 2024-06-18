@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import s from "../styles/Hero.module.css";
-import video from "../assets/about.mp4";
+import video from "../assets/main.mp4";
 import {
   FaArrowLeft,
   FaFacebook,
