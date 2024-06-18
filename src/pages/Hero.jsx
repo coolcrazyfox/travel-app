@@ -10,10 +10,22 @@ import s from "../styles/Hero.module.css";
 import video from "../assets/main.mp4";
 
 export const iconsData = [
-  { title: "instagram", icon: <FaInstagram /> },
-  { title: "telegram", icon: <FaTelegram /> },
-  { title: "facebook", icon: <FaFacebook /> },
-  { title: "twitter", icon: <FaTwitter /> },
+  {
+    title: "instagram",
+    icon: <FaInstagram />,
+    link: "https://www.instagram.com/",
+  },
+  {
+    title: "telegram",
+    icon: <FaTelegram />,
+    link: "https://www.telegram.com/",
+  },
+  {
+    title: "facebook",
+    icon: <FaFacebook />,
+    link: "https://www.facebook.com/",
+  },
+  { title: "twitter", icon: <FaTwitter />, link: "https://www.twitter.com/" },
 ];
 
 const Hero = () => {
