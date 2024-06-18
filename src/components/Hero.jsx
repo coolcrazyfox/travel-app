@@ -61,7 +61,7 @@ const Hero = () => {
           );
         })}
       </div>
-      <div className={s.slider_navigation}>
+      {/* <div className={s.slider_navigation}>
         <Swiper
           className={s.swiper_container}
           slidesPerView={1}
@@ -92,7 +92,7 @@ const Hero = () => {
             );
           })}
         </Swiper>
-      </div>
+      </div> */}
     </section>
   );
 };
