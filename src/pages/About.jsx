@@ -9,9 +9,9 @@ const About = () => {
       <video className={s.video_box} src={video} autoPlay muted loop></video>
       <div className={s.content}>
         <h1 className={s.h1}>
-          Wonderful.
+          About
           <br />
-          <span className={s.span}>Island</span>
+          <span className={s.span}>Us</span>
         </h1>
         <p className={s.description}>
           lorem In cillum officia id nisi ut.Proident sint exercitation
