@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
 import s from "../styles/Hero.module.css";
 import video from "../assets/main.mp4";
@@ -45,9 +46,9 @@ const Hero = () => {
           esse excepteur.Nisi duis enim id aliquip excepteur proident nulla
           ullamco esse nisi quis magna duis.
         </p>
-        <a href="link" className={s.link_btn}>
+        <Link to="/gallery" className={s.link_btn}>
           Read More
-        </a>
+        </Link>
       </div>
 
       <div className={s.media_icons}>
