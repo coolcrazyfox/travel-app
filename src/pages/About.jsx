@@ -9,7 +9,7 @@ import {
   FaTelegram,
   FaTwitter,
 } from "react-icons/fa";
-export const iconsData = [
+const iconsData = [
   {
     title: "instagram",
     icon: <FaInstagram />,
