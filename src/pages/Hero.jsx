@@ -9,23 +9,23 @@ import { FaFacebook, FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
 import s from "../styles/Hero.module.css";
 import video from "../assets/main.mp4";
 
-export const iconsData = [
+const iconsData = [
   {
     title: "instagram",
     icon: <FaInstagram />,
-    link: "https://www.instagram.com/",
+    links: "https://www.instagram.com/",
   },
   {
     title: "telegram",
     icon: <FaTelegram />,
-    link: "https://www.telegram.com/",
+    links: "https://www.telegram.com/",
   },
   {
     title: "facebook",
     icon: <FaFacebook />,
-    link: "https://www.facebook.com/",
+    links: "https://www.facebook.com/",
   },
-  { title: "twitter", icon: <FaTwitter />, link: "https://www.twitter.com/" },
+  { title: "twitter", icon: <FaTwitter />, links: "https://www.twitter.com/" },
 ];
 
 const Hero = () => {
@@ -53,7 +53,7 @@ const Hero = () => {
       <div className={s.media_icons}>
         {iconsData.map((item, index) => {
           return (
-            <a key={item.title} className={s.link} href={item.link}>
+            <a key={item.title} className={s.link} href={item.links}>
               <i className={s.fab}>{item.icon}</i>
             </a>
           );
