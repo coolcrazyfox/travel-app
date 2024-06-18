@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import s from "../styles/Header.module.css";
 
 const initNav = [
-  { id: 1, name: "Home" },
-  { id: 2, name: "About" },
-  { id: 3, name: "Explore" },
-  { id: 4, name: "Gallery" },
-  { id: 5, name: "Contact" },
+  { id: 1, name: "Home", link: "/home" },
+  { id: 2, name: "About", link: "/about" },
+  { id: 3, name: "Explore", link: "/explore" },
+  { id: 4, name: "Gallery", link: "/gallery" },
+  { id: 5, name: "Contact", link: "/contact" },
 ];
 
 const Header = () => {

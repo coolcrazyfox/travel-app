@@ -7,8 +7,8 @@ import About from "./pages/About";
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
-        <Header />
         <Route path="home" element={<Hero />} />
         <Route path="about" element={<About />} />
       </Routes>
