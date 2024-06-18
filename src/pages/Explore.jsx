@@ -22,9 +22,9 @@ const Explore = () => {
       <video className={s.video_box} src={video} autoPlay muted loop></video>
       <div className={s.content}>
         <h1 className={s.h1}>
-          About
+          Explore
           <br />
-          <span className={s.span}>The Company</span>
+          <span className={s.span}>with us</span>
         </h1>
         <p className={s.description}>
           lorem In cillum officia id nisi ut.Proident sint exercitation
