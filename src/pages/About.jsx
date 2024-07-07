@@ -46,7 +46,7 @@ const About = () => {
           esse excepteur.Nisi duis enim id aliquip excepteur proident nulla
           ullamco esse nisi quis magna duis.
         </p>
-        <Link to={PATH} className={s.link_btn}>
+        <Link to={PATH.HERO} className={s.link_btn}>
           <span>
             <FaArrowLeft width={22} height={22} />
           </span>
