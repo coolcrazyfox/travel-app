@@ -45,7 +45,7 @@ const About = () => {
           esse excepteur.Nisi duis enim id aliquip excepteur proident nulla
           ullamco esse nisi quis magna duis.
         </p>
-        <Link to="/home" className={s.link_btn}>
+        <Link to="/" className={s.link_btn}>
           <span>
             <FaArrowLeft width={22} height={22} />
           </span>
