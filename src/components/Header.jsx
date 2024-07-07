@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import s from "../styles/Header.module.css";
 
 const initNav = [
-  { id: 1, name: "Home", link: "/home" },
+  { id: 1, name: "Home", link: "/" },
   { id: 2, name: "About", link: "/about" },
   { id: 3, name: "Explore", link: "/explore" },
   { id: 4, name: "Gallery", link: "/gallery" },
@@ -19,7 +19,7 @@ const Header = () => {
   };
   return (
     <div className={s.header}>
-      <Link to="/home" className={s.brand} href="link_HERO">
+      <Link to="/" className={s.brand} href="link_HERO">
         Travel
       </Link>
       <div
