@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import s from "../styles/Hero.module.css";
 import video from "../assets/contact_video.mp4";
+import { PATH } from "../routes/RouterRoot";
 import {
   FaArrowLeft,
   FaFacebook,
@@ -45,7 +46,7 @@ const Contact = () => {
           esse excepteur.Nisi duis enim id aliquip excepteur proident nulla
           ullamco esse nisi quis magna duis.
         </p>
-        <Link to="/" className={s.link_btn}>
+        <Link to={PATH.HERO} className={s.link_btn}>
           <span>
             <FaArrowLeft width={22} height={22} />
           </span>
