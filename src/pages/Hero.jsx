@@ -1,10 +1,10 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
-import { Pagination } from "swiper/modules";
+// import { Pagination } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTelegram, FaTwitter } from "react-icons/fa";
 import s from "../styles/Hero.module.css";
