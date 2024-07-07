@@ -4,11 +4,13 @@ import About from "./pages/About";
 import Explore from "./pages/Explore";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import RouterRoot from "./routes/RouterRoot";
 
 function App() {
   return (
     <>
       <Header />
+      <RouterRoot />
     </>
   );
 }
