@@ -5,6 +5,8 @@ import About from "../pages/About";
 import Explore from "../pages/Explore";
 import Gallery from "../pages/Gallery";
 import Contact from "../pages/Contact";
+import Error404 from "../pages/Contact";
+
 export const PATH = {
   HERO: "/",
   ABOUT: "/about",
@@ -12,6 +14,7 @@ export const PATH = {
   GALLERY: "/gallery",
   CONTACT: "/contact",
 };
+
 const RouterRoot = () => {
   return (
     <div>
