@@ -13,6 +13,7 @@ export const PATH = {
   EXPLORE: "/explore",
   GALLERY: "/gallery",
   CONTACT: "/contact",
+  ERROR404: "/er",
 };
 
 const RouterRoot = () => {
@@ -24,7 +25,7 @@ const RouterRoot = () => {
         <Route path={PATH.EXPLORE} element={<Explore />} />
         <Route path={PATH.GALLERY} element={<Gallery />} />
         <Route path={PATH.CONTACT} element={<Contact />} />
-        <Route path={"*"} element={<Error404 />} />
+        <Route path={PATH.ERROR404} element={<Error404 />} />
       </Routes>
     </div>
   );
