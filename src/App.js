@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./pages/Hero";
 import About from "./pages/About";
@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<Hero />} />
@@ -17,7 +17,7 @@ function App() {
         <Route path="gallery" element={<Gallery />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
