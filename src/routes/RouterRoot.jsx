@@ -13,12 +13,12 @@ export const PATH = {
   EXPLORE: "/explore",
   GALLERY: "/gallery",
   CONTACT: "/contact",
-  ERROR404: "/er",
+  ERROR404: "*",
 };
 
 const RouterRoot = () => {
   return (
-    <div>
+    <>
       <Routes>
         <Route path={PATH.HERO} element={<Hero />} />
         <Route path={PATH.ABOUT} element={<About />} />
@@ -27,7 +27,7 @@ const RouterRoot = () => {
         <Route path={PATH.CONTACT} element={<Contact />} />
         <Route path={PATH.ERROR404} element={<Error404 />} />
       </Routes>
-    </div>
+    </>
   );
 };
 
