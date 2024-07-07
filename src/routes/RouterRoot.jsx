@@ -6,25 +6,22 @@ import Explore from "../pages/Explore";
 import Gallery from "../pages/Gallery";
 import Contact from "../pages/Contact";
 export const PATH = {
-  USERS: "/users",
   HERO: "/",
-  REGISTRATION: "/registration",
-  BLOGGER: "/blogger",
-  POSTS: "/posts",
-  DETAILS: "/detblog",
-  POST_DETAILS: "/postdetails",
-  POST_EDIT: "/postedit",
-  SETTINGS: "/settings",
+  ABOUT: "/about",
+  EXPLORE: "/explore",
+  GALLERY: "/gallery",
+  CONTACT: "/contact",
 };
 const RouterRoot = () => {
   return (
     <div>
       <Routes>
-        <Route path="home" element={<Hero />} />
-        <Route path="about" element={<About />} />
-        <Route path="explore" element={<Explore />} />
-        <Route path="gallery" element={<Gallery />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path={PATH.HERO} element={<Hero />} />
+        <Route path={PATH.ABOUT} element={<About />} />
+        <Route path={PATH.EXPLORE} element={<Explore />} />
+        <Route path={PATH.GALLERY} element={<Gallery />} />
+        <Route path={PATH.CONTACT} element={<Contact />} />
+        <Route path={"*"} element={<Error404 />} />
       </Routes>
     </div>
   );
