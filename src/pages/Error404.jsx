@@ -2,7 +2,7 @@ import React from "react";
 import { PATH } from "../routes/RouterRoot";
 import s from "../styles/Error404.module.css";
 import { Link } from "react-router-dom";
-import img404 from "../assets/error404.jpg";
+import { img404 } from "../assets/error404.jpg";
 
 const Error404 = () => {
   return (
